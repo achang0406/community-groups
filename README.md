@@ -1,6 +1,6 @@
 *Exam - This was a 4 hour exam finished in 1.5 hours.
 
-Community Group
+__Community Group__
 
 Description: An networking website allowing people to create and join groups.
 
