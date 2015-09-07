@@ -3,6 +3,7 @@
 Community Group
 
 Description: An networking website allowing people to create and join groups.
+
 Technology:
 - Ruby on Rails
 - Login/Registration
