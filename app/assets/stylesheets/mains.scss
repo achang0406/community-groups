@@ -1,0 +1,15 @@
+// Place all the styles related to the Mains controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.main{
+	width: 45%;
+	outline: 1px solid black;
+	padding: 10px;
+	padding-bottom: 30px;
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 50px;
+}
+.main input{
+	display: block;
+}

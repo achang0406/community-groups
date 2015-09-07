@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BlackBeltTestRor</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<% if current_user %>
+	<div id='header'>
+		<a href="/groups">Dashboard</a>
+		<a id="logout" href="/mains/logout">Log Out</a>
+	</div>
+<% end %>
+
+<%= yield %>
+
+<% if flash[:errors] %>
+	<% flash[:errors].each do |error| %>
+		<p><%= error %></p>
+	<% end %>
+<% end %>
+
+</body>
+</html>

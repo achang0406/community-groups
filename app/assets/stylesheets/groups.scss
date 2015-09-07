@@ -1,0 +1,39 @@
+// Place all the styles related to the Groups controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.newOrg{
+	outline: 1px solid black;
+	width: 40%;
+	padding: 10px;
+	padding-bottom: 30px;
+}
+.groups{
+	display: inline-block;
+	vertical-align: top;
+	padding: 10px;
+	margin-right: 50px;
+}
+.groups #delete{
+	display: inline-block;
+}
+.newOrg{
+	display: inline-block;
+	padding: 10px;
+	padding-bottom: 30px;
+	width: 300px;
+}
+.newOrg label{
+	display: block;
+}
+.newOrg input{
+	display: block;
+}
+.newOrg textarea{
+	width: 200px;
+	height: 100px;
+}
+#show h1{
+	display: inline-block;
+	margin-right: 30px;
+}

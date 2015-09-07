@@ -1,0 +1,21 @@
+<div id="show">
+	<h1><%= @group.name %></h1>
+	<% if !joined_group @group.id %>
+		<a href="/groups/<%= @group.id %>/join"><button>Join Group</button></a>
+	<% else %>
+		<a href="/groups/<%= @group.id %>/leave"><button>Leave Group</button></a>
+	<% end %>
+	<p><%= @group.description %></p>
+
+	<% if @group.user.id == session[:user_id] %>
+		<h3>Created by YOU</h3>
+	<% else %>
+		<h3><%= "Created by #{@group.user.first_name} #{@group.user.last_name}" %></h3>
+	<% end %>
+	<h4>Members:</h4>
+	<ul>
+		<% @members.each do |member| %>
+		<li><%= "#{member.user.first_name} #{member.user.last_name}" %></li>
+		<% end %>
+	</ul>
+</div>

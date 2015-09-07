@@ -1,0 +1,3 @@
+# Be sure to restart your server when you modify this file.
+
+Rails.application.config.session_store :cookie_store, key: '_black_belt_test_ror_session'
